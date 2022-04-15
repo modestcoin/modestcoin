@@ -3,9 +3,9 @@ Modestcoin Core integration/staging tree
 
 [![Build Status](https://travis-ci.org/modestcoin-project/modestcoin.svg?branch=master)](https://travis-ci.org/modestcoin-project/modestcoin)
 
-https://modestcoin.org (Coming Soon!, Featuring WebWallet For Noobs)                                                                                                   
-http://modestchain.com:3001 (Blockchain Explorer, *In manual mode please manually search for your transactions*)                                                       
-http://modestchain.com:8080 (NOMP for Mining pool, Will Be further Updated and Developed 3rd Party)                                                                    
+https://modestcoin.org (Coming soon!, featuring a WebWallet for ease of use.)                                                                                                   
+http://modestchain.com:3001 (Blockchain explorer, *(In manual mode) please manually search for your transactions*)                                                       
+http://modestchain.com:8080 (NOMP for mining pool, will be further updated and developed 3rd Party)                                                                    
 
 What is Modestcoin?
 ----------------
