@@ -1,7 +1,6 @@
 Modestcoin Core integration/staging tree
 =====================================
 
-[![Build Status](https://travis-ci.org/modestcoin-project/modestcoin.svg?branch=master)](https://travis-ci.org/modestcoin-project/modestcoin)
 
 https://modestcoin.org (Coming soon!, featuring a WebWallet for ease of use.)                                                                                                   
 http://modestchain.com:3001 (Blockchain explorer, *(In manual mode) please manually search for your transactions*)                                                       
