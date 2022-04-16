@@ -4,7 +4,7 @@ Modestcoin Core integration/staging tree
 
 https://modestcoin.org (Coming soon!, featuring a WebWallet for ease of use.)                                                                                                   
 http://modestchain.com:3001 (Blockchain explorer, *(In manual mode) please manually search for your transactions*)                                                       
-http://modestchain.com:8080 (NOMP for mining pool, will be further updated and developed 3rd Party)                                                                    
+http://modestchain.com:8080 (NOMP for mining pool, will be further updated and developed)                                                                    
 
 What is Modestcoin?
 ----------------
