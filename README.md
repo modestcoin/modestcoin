@@ -6,7 +6,7 @@ https://modestcoin.org (Coming soon!, featuring a WebWallet for ease of use.)
 http://modestchain.com:3001 (Blockchain explorer, *(In manual mode) please manually search for your transactions*)                                                       
 http://modestchain.com:8080 (NOMP for mining pool, will be further updated and developed)                                                                             
 
-(Visit the "README.md" repository for detailed linux building instructions)
+(Visit the "ModestDocumentation.md" repository for detailed linux building instructions)
 
 What is Modestcoin?
 ----------------
