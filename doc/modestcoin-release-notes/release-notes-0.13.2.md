@@ -17,8 +17,8 @@ an OS initially released in 2001. This means that not even critical security
 updates will be released anymore. Without security updates, using a modestcoin
 wallet on a XP machine is irresponsible at least.
 
-In addition to that, with 0.12.x there have been varied reports of Bitcoin Core
-randomly crashing on Windows XP. It is [not clear](https://github.com/bitcoin/bitcoin/issues/7681#issuecomment-217439891)
+In addition to that, with 0.12.x there have been varied reports of Modestcoin Core
+randomly crashing on Windows XP. It is [not clear](https://github.com/modestcoin/modestcoin/issues/7681#issuecomment-217439891)
 what the source of these crashes is, but it is likely that upstream
 libraries such as Qt are no longer being tested on XP.
 
@@ -42,7 +42,7 @@ Signature validation using libsecp256k1
 ---------------------------------------
 
 ECDSA signatures inside Modestcoin transactions now use validation using
-[libsecp256k1](https://github.com/bitcoin-core/secp256k1) instead of OpenSSL.
+[libsecp256k1](https://github.com/modestcoin-core/secp256k1) instead of OpenSSL.
 
 Depending on the platform, this means a significant speedup for raw signature
 validation speed. The advantage is largest on x86_64, where validation is over
@@ -79,7 +79,7 @@ Direct headers announcement (BIP 130)
 -------------------------------------
 
 Between compatible peers, [BIP 130]
-(https://github.com/bitcoin/bips/blob/master/bip-0130.mediawiki)
+(https://github.com/modestcoin/bips/blob/master/bip-0130.mediawiki)
 direct headers announcement is used. This means that blocks are advertised by
 announcing their headers directly, instead of just announcing the hash. In a
 reorganization, all new headers are sent, instead of just the new tip. This
@@ -154,7 +154,7 @@ transactions for mined blocks. Modestcoin Core will relay transactions with
 insufficient fees depending on the setting of `-limitfreerelay=<r>` (default:
 `r=15` kB per minute) and `-blockprioritysize=<s>`.
 
-In Bitcoin Core 0.12, when mempool limit has been reached a higher minimum
+In Modestcoin Core 0.12, when mempool limit has been reached a higher minimum
 relay fee takes effect to limit memory usage. Transactions which do not meet
 this higher effective minimum relay fee will not be relayed or mined even if
 they rank highly according to the priority heuristic.
@@ -282,13 +282,13 @@ practice. In future releases, a higher value may also help the network
 as a whole: stored blocks could be served to other nodes.
 
 For further information about pruning, you may also consult the [release
-notes of Bitcoin Core v0.11.0](https://github.com/bitcoin/bitcoin/blob/v0.11.0/doc/release-notes.md#block-file-pruning).
+notes of Modestcoin Core v0.11.0](https://github.com/modestcoin/modestcoin/blob/v0.11.0/doc/release-notes.md#block-file-pruning).
 
 `NODE_BLOOM` service bit
 ------------------------
 
 Support for the `NODE_BLOOM` service bit, as described in [BIP
-111](https://github.com/bitcoin/bips/blob/master/bip-0111.mediawiki), has been
+111](https://github.com/modestcoin/bips/blob/master/bip-0111.mediawiki), has been
 added to the P2P protocol code.
 
 BIP 111 defines a service bit to allow peers to advertise that they support
@@ -320,7 +320,7 @@ RPC: Low-level API changes
 * The `asm` property of each scriptSig now contains the decoded signature hash
   type for each signature that provides a valid defined hash type.
 
-* OP_NOP2 has been renamed to OP_CHECKLOCKTIMEVERIFY by [BIP 65](https://github.com/bitcoin/bips/blob/master/bip-0065.mediawiki)
+* OP_NOP2 has been renamed to OP_CHECKLOCKTIMEVERIFY by [BIP 65](https://github.com/modestcoin/bips/blob/master/bip-0065.mediawiki)
 
 The following items contain assembly representations of scriptSig signatures
 and are affected by this change:
@@ -483,7 +483,7 @@ invalid for a defined period of time after confirmation of its corresponding
 outpoint.
 
 For more information about the implementation, see
-<https://github.com/bitcoin/bitcoin/pull/7184>
+<https://github.com/modestcoin/modestcoin/pull/7184>
 
 BIP112 soft fork to enforce OP_CHECKSEQUENCEVERIFY
 --------------------------------------------------
@@ -494,7 +494,7 @@ for a new opcode in the Modestcoin scripting system that in combination with
 on the age of the output being spent.
 
 For more information about the implementation, see
-<https://github.com/bitcoin/bitcoin/pull/7524>
+<https://github.com/modestcoin/modestcoin/pull/7524>
 
 BIP113 locktime enforcement soft fork
 -------------------------------------
@@ -546,7 +546,7 @@ locktimes to allow those transactions to be included in mempools at
 approximately the expected time.
 
 For more information about the implementation, see
-<https://github.com/bitcoin/bitcoin/pull/6566>
+<https://github.com/modestcoin/modestcoin/pull/6566>
 
 
 Compact Block support (BIP 152)
@@ -558,7 +558,7 @@ in PR 8068.
 The primary goal is reducing the bandwidth spikes at relay time, though in many
 cases it also reduces propagation delay. It is automatically enabled between
 compatible peers.
-[BIP 152](https://github.com/bitcoin/bips/blob/master/bip-0152.mediawiki)
+[BIP 152](https://github.com/modestcoin/bips/blob/master/bip-0152.mediawiki)
 
 As a side-effect, ordinary non-mining nodes will download and upload blocks
 faster if those blocks were produced by miners using similar transaction
@@ -594,7 +594,7 @@ There is no distinction between internal (change) and external keys.
 
 HD wallets are incompatible with older versions of Modestcoin Core.
 
-[Pull request](https://github.com/bitcoin/bitcoin/pull/8035/files), [BIP 32](https://github.com/bitcoin/bips/blob/master/bip-0032.mediawiki)
+[Pull request](https://github.com/modestcoin/modestcoin/pull/8035/files), [BIP 32](https://github.com/modestcoin/bips/blob/master/bip-0032.mediawiki)
 
 
 Mining transaction selection ("Child Pays For Parent")
@@ -612,7 +612,7 @@ The command line option `-blockmaxsize` remains an option to specify the
 maximum number of serialized bytes in a generated block.  In addition, the new
 command line option `-blockmaxweight` has been added, which specifies the
 maximum "block weight" of a generated block, as defined by [BIP 141 (Segregated
-Witness)] (https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki).
+Witness)] (https://github.com/modestcoin/bips/blob/master/bip-0141.mediawiki).
 
 In preparation for Segregated Witness, the mining algorithm has been modified
 to optimize transaction selection for a given block weight, rather than a given
@@ -629,7 +629,7 @@ support `-blockmaxsize` performs additional computation to ensure that
 constraint is met.  (Note that for mainnet, in this release, the equivalent
 parameter for `-blockmaxweight` would be four times the desired
 `-blockmaxsize`.  See [BIP 141]
-(https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki) for additional
+(https://github.com/modestcoin/bips/blob/master/bip-0141.mediawiki) for additional
 details.)
 
 In the future, the `-blockmaxsize` option may be removed, as block creation is
@@ -690,7 +690,7 @@ Low-level P2P changes
 - The optional new p2p message "feefilter" is implemented and the protocol
   version is bumped to 70013. Upon receiving a feefilter message from a peer,
   a node will not send invs for any transactions which do not meet the filter
-  feerate. [BIP 133](https://github.com/bitcoin/bips/blob/master/bip-0133.mediawiki)
+  feerate. [BIP 133](https://github.com/modestcoin/bips/blob/master/bip-0133.mediawiki)
 
 - The P2P alert system has been removed in PR #7692 and the `alert` P2P message
   is no longer supported.
@@ -739,10 +739,10 @@ Low-level RPC changes
 - Asm script outputs replacements for OP_NOP2 and OP_NOP3
 
   - OP_NOP2 has been renamed to OP_CHECKLOCKTIMEVERIFY by [BIP
-65](https://github.com/bitcoin/bips/blob/master/bip-0065.mediawiki)
+65](https://github.com/modestcoin/bips/blob/master/bip-0065.mediawiki)
 
   - OP_NOP3 has been renamed to OP_CHECKSEQUENCEVERIFY by [BIP
-112](https://github.com/bitcoin/bips/blob/master/bip-0112.mediawiki)
+112](https://github.com/modestcoin/bips/blob/master/bip-0112.mediawiki)
 
   - The following outputs are affected by this change:
 
@@ -771,7 +771,7 @@ Low-level ZMQ changes
   listeners to detect lost notifications.
   The sequence number is always the last element in a multi-part ZMQ notification and
   therefore backward compatible. Each message type has its own counter.
-  PR [#7762](https://github.com/bitcoin/bitcoin/pull/7762).
+  PR [#7762](https://github.com/modestcoin/modestcoin/pull/7762).
 
 Segregated witness soft fork
 ----------------------------
@@ -849,7 +849,7 @@ covered by the txid. This provides several immediate benefits:
   Curve Digital Security Algorithm [ECDSA].)
 
 - **More efficient almost-full-node security** Satoshi Nakamoto's original
-  Bitcoin paper describes a method for allowing newly-started full nodes to
+  Modestcoin paper describes a method for allowing newly-started full nodes to
   skip downloading and validating some data from historic blocks that are
   protected by large amounts of proof of work.  Unfortunately, Nakamoto's
   method can't guarantee that a newly-started node using this method will
@@ -867,12 +867,12 @@ covered by the txid. This provides several immediate benefits:
 - **Script versioning:** Segwit makes it easy for future soft forks to allow
   Modestcoin users to individually opt-in to almost any change in the Modestcoin
   Script language when those users receive new transactions.  Features
-  currently being researched by Bitcoin and Modestcoin Core contributors that may
+  currently being researched by Modestcoin and Modestcoin Core contributors that may
   use this capability include support for Schnorr signatures, which can improve
   the privacy and efficiency of multisig transactions (or transactions with
   multiple inputs), and Merklized Abstract Syntax Trees (MAST), which can
   improve the privacy and efficiency of scripts with two or more conditions.
-  Other Bitcoin community members are studying several other improvements
+  Other Modestcoin community members are studying several other improvements
   that can be made using script versioning.
 
 Activation for the segwit soft fork is being managed using
@@ -888,12 +888,12 @@ For more information about segwit, please see the [segwit FAQ][], the
 [segwit wallet developers guide][] or BIPs [141][BIP141], [143][BIP143],
 [144][BIP144], and [145][BIP145].
 
-[Segwit FAQ]: https://bitcoincore.org/en/2016/01/26/segwit-benefits/
-[segwit wallet developers guide]: https://bitcoincore.org/en/segwit_wallet_dev/
-[BIP141]: https://github.com/bitcoin/bips/blob/master/bip-0141.mediawiki
-[BIP143]: https://github.com/bitcoin/bips/blob/master/bip-0143.mediawiki
-[BIP144]: https://github.com/bitcoin/bips/blob/master/bip-0144.mediawiki
-[BIP145]: https://github.com/bitcoin/bips/blob/master/bip-0145.mediawiki
+[Segwit FAQ]: https://modestcoincore.org/en/2016/01/26/segwit-benefits/
+[segwit wallet developers guide]: https://modestcoincore.org/en/segwit_wallet_dev/
+[BIP141]: https://github.com/modestcoin/bips/blob/master/bip-0141.mediawiki
+[BIP143]: https://github.com/modestcoin/bips/blob/master/bip-0143.mediawiki
+[BIP144]: https://github.com/modestcoin/bips/blob/master/bip-0144.mediawiki
+[BIP145]: https://github.com/modestcoin/bips/blob/master/bip-0145.mediawiki
 
 
 Null dummy soft fork
@@ -924,7 +924,7 @@ as segwit.
 
 For more information, please see [BIP147][].
 
-[BIP147]: https://github.com/bitcoin/bips/blob/master/bip-0147.mediawiki
+[BIP147]: https://github.com/modestcoin/bips/blob/master/bip-0147.mediawiki
 
 Low-level RPC changes
 ---------------------
@@ -982,7 +982,7 @@ Credits
 
 Thanks to everyone who directly contributed to this release:
 
-- [The Bitcoin Core Developers](/doc/release-notes)
+- [The Modestcoin Core Developers](/doc/release-notes)
 - Charles Lee
 - Adrian Gallagher
 - shaolinfry

@@ -1,0 +1,11 @@
+[Protocol]
+exec=modestcoin-qt '%u'
+protocol=modestcoin
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false

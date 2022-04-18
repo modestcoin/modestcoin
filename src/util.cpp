@@ -1,10 +1,10 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2016 The Bitcoin Core developers
+// Copyright (c) 2009-2016 The Modestcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 #if defined(HAVE_CONFIG_H)
-#include "config/bitcoin-config.h"
+#include "config/modestcoin-config.h"
 #endif
 
 #include "util.h"
@@ -103,8 +103,8 @@ namespace boost {
 
 using namespace std;
 
-const char * const BITCOIN_CONF_FILENAME = "modestcoin.conf";
-const char * const BITCOIN_PID_FILENAME = "modestcoin.pid";
+const char * const MODESTCOIN_CONF_FILENAME = "modestcoin.conf";
+const char * const MODESTCOIN_PID_FILENAME = "modestcoin.pid";
 
 CCriticalSection cs_args;
 map<string, string> mapArgs;
@@ -482,10 +482,10 @@ void PrintExceptionContinue(const std::exception* pex, const char* pszThread)
 boost::filesystem::path GetDefaultDataDir()
 {
     namespace fs = boost::filesystem;
-    // Windows < Vista: C:\Documents and Settings\Username\Application Data\Bitcoin
-    // Windows >= Vista: C:\Users\Username\AppData\Roaming\Bitcoin
-    // Mac: ~/Library/Application Support/Bitcoin
-    // Unix: ~/.bitcoin
+    // Windows < Vista: C:\Documents and Settings\Username\Application Data\Modestcoin
+    // Windows >= Vista: C:\Users\Username\AppData\Roaming\Modestcoin
+    // Mac: ~/Library/Application Support/Modestcoin
+    // Unix: ~/.modestcoin
 #ifdef WIN32
     // Windows
     return GetSpecialFolderPath(CSIDL_APPDATA) / "Modestcoin";
@@ -561,7 +561,7 @@ void ReadConfigFile(const std::string& confPath)
 {
     boost::filesystem::ifstream streamConfig(GetConfigFile(confPath));
     if (!streamConfig.good())
-        return; // No bitcoin.conf file is OK
+        return; // No modestcoin.conf file is OK
 
     {
         LOCK(cs_args);
@@ -570,7 +570,7 @@ void ReadConfigFile(const std::string& confPath)
 
         for (boost::program_options::detail::config_file_iterator it(streamConfig, setOptions), end; it != end; ++it)
         {
-            // Don't overwrite existing settings so command line settings override bitcoin.conf
+            // Don't overwrite existing settings so command line settings override modestcoin.conf
             string strKey = string("-") + it->string_key;
             string strValue = it->value[0];
             InterpretNegativeSetting(strKey, strValue);
@@ -586,7 +586,7 @@ void ReadConfigFile(const std::string& confPath)
 #ifndef WIN32
 boost::filesystem::path GetPidFile()
 {
-    boost::filesystem::path pathPidFile(GetArg("-pid", BITCOIN_PID_FILENAME));
+    boost::filesystem::path pathPidFile(GetArg("-pid", MODESTCOIN_PID_FILENAME));
     if (!pathPidFile.is_complete()) pathPidFile = GetDataDir() / pathPidFile;
     return pathPidFile;
 }
@@ -848,11 +848,11 @@ std::string CopyrightHolders(const std::string& strPrefix)
 {
     std::string strCopyrightHolders = strPrefix + strprintf(_(COPYRIGHT_HOLDERS), _(COPYRIGHT_HOLDERS_SUBSTITUTION));
 
-    // Check for untranslated substitution to make sure Bitcoin Core copyright is not removed by accident
-    if (strprintf(COPYRIGHT_HOLDERS, COPYRIGHT_HOLDERS_SUBSTITUTION).find("Bitcoin Core") == std::string::npos) {
+    // Check for untranslated substitution to make sure Modestcoin Core copyright is not removed by accident
+    if (strprintf(COPYRIGHT_HOLDERS, COPYRIGHT_HOLDERS_SUBSTITUTION).find("Modestcoin Core") == std::string::npos) {
         std::string strYear = strPrefix;
         strYear.replace(strYear.find("2011"), sizeof("2011")-1, "2009");
-        strCopyrightHolders += "\n" + strYear + "The Bitcoin Core developers";
+        strCopyrightHolders += "\n" + strYear + "The Modestcoin Core developers";
     }
     return strCopyrightHolders;
 }

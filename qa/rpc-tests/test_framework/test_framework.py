@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright (c) 2014-2016 The Bitcoin Core developers
+# Copyright (c) 2014-2016 The Modestcoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
@@ -29,7 +29,7 @@ from .util import (
 from .authproxy import JSONRPCException
 
 
-class BitcoinTestFramework(object):
+class ModestcoinTestFramework(object):
 
     def __init__(self):
         self.num_nodes = 4
@@ -190,13 +190,13 @@ class BitcoinTestFramework(object):
             sys.exit(1)
 
 
-# Test framework for doing p2p comparison testing, which sets up some bitcoind
+# Test framework for doing p2p comparison testing, which sets up some modestcoind
 # binaries:
 # 1 binary: test binary
 # 2 binaries: 1 test binary, 1 ref binary
 # n>2 binaries: 1 test binary, n-1 ref binaries
 
-class ComparisonTestFramework(BitcoinTestFramework):
+class ComparisonTestFramework(ModestcoinTestFramework):
 
     def __init__(self):
         super().__init__()

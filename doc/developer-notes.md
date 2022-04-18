@@ -186,7 +186,7 @@ Threads
 
 - ThreadRPCServer : Remote procedure call handler, listens on port 9332 for connections and services them.
 
-- BitcoinMiner : Generates modestcoins (if wallet is enabled).
+- ModestcoinMiner : Generates modestcoins (if wallet is enabled).
 
 - Shutdown : Does an orderly shutdown of everything.
 
@@ -439,10 +439,10 @@ Current subtrees include:
   - Upstream at https://github.com/google/leveldb ; Maintained by Google, but open important PRs to Core to avoid delay
 
 - src/libsecp256k1
-  - Upstream at https://github.com/bitcoin-core/secp256k1/ ; actively maintaned by Core contributors.
+  - Upstream at https://github.com/modestcoin-core/secp256k1/ ; actively maintaned by Core contributors.
 
 - src/crypto/ctaes
-  - Upstream at https://github.com/bitcoin-core/ctaes ; actively maintained by Core contributors.
+  - Upstream at https://github.com/modestcoin-core/ctaes ; actively maintained by Core contributors.
 
 - src/univalue
   - Upstream at https://github.com/jgarzik/univalue ; report important PRs to Core to avoid delay.

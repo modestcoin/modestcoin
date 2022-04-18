@@ -1,0 +1,8 @@
+/usr/bin/modestcoin-cli		--	gen_context(system_u:object_r:modestcoin_exec_t,s0)
+/usr/sbin/modestcoind		--	gen_context(system_u:object_r:modestcoin_exec_t,s0)
+/usr/lib(64)?/modestcoin/modestcoind		--	gen_context(system_u:object_r:modestcoin_exec_t,s0)
+
+/etc/modestcoin(/.*)?		gen_context(system_u:object_r:modestcoin_conf_t,s0)
+/var/lib/modestcoin(/.*)?		gen_context(system_u:object_r:modestcoin_var_lib_t,s0)
+
+(/var)?/run/modestcoind(/.*)?   gen_context(system_u:object_r:modestcoin_var_run_t,s0)

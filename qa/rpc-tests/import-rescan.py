@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# Copyright (c) 2014-2016 The Bitcoin Core developers
+# Copyright (c) 2014-2016 The Modestcoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 """Test rescan behavior of importaddress, importpubkey, importprivkey, and
@@ -18,7 +18,7 @@ happened previously.
 """
 
 from test_framework.authproxy import JSONRPCException
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import ModestcoinTestFramework
 from test_framework.util import (start_nodes, connect_nodes, sync_blocks, assert_equal, set_node_times)
 from decimal import Decimal
 
@@ -109,7 +109,7 @@ IMPORT_NODES = [ImportNode(*fields) for fields in itertools.product((False, True
 RESCAN_WINDOW = 2 * 60 * 60
 
 
-class ImportRescanTest(BitcoinTestFramework):
+class ImportRescanTest(ModestcoinTestFramework):
     def __init__(self):
         super().__init__()
         self.num_nodes = 2 + len(IMPORT_NODES)

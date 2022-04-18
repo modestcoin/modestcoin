@@ -30,8 +30,8 @@ config.log
 config.status
 configure
 libtool
-src/config/bitcoin-config.h
-src/config/bitcoin-config.h.in
+src/config/modestcoin-config.h
+src/config/modestcoin-config.h.in
 src/config/stamp-h1
 share/setup.nsi
 share/qt/Info.plist
@@ -108,5 +108,5 @@ qa/cache/*
 
 /doc/doxygen/
 
-libbitcoinconsensus.pc
+libmodestcoinconsensus.pc
 contrib/devtools/split-debug.sh

@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-# Copyright (c) 2015-2016 The Bitcoin Core developers
+# Copyright (c) 2015-2016 The Modestcoin Core developers
 # Distributed under the MIT software license, see the accompanying
 # file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 from test_framework.mininode import *
-from test_framework.test_framework import BitcoinTestFramework
+from test_framework.test_framework import ModestcoinTestFramework
 from test_framework.util import *
 import logging
 
@@ -70,10 +70,10 @@ class TestManager(NodeConnCB):
         self.connection.disconnect_node()
 
 
-class MaxBlocksInFlightTest(BitcoinTestFramework):
+class MaxBlocksInFlightTest(ModestcoinTestFramework):
     def add_options(self, parser):
         parser.add_option("--testbinary", dest="testbinary",
-                          default=os.getenv("BITCOIND", "bitcoind"),
+                          default=os.getenv("MODESTCOIND", "modestcoind"),
                           help="Binary to test max block requests behavior")
 
     def __init__(self):

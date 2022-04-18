@@ -1,0 +1,92 @@
+#!/sbin/runscript
+
+# backward compatibility for existing gentoo layout 
+#
+if [ -d "/var/lib/modestcoin/.modestcoin" ]; then
+	MODESTCOIND_DEFAULT_DATADIR="/var/lib/modestcoin/.modestcoin"
+else
+	MODESTCOIND_DEFAULT_DATADIR="/var/lib/modestcoind"
+fi
+
+MODESTCOIND_CONFIGFILE=${MODESTCOIND_CONFIGFILE:-/etc/modestcoin/modestcoin.conf}
+MODESTCOIND_PIDDIR=${MODESTCOIND_PIDDIR:-/var/run/modestcoind}
+MODESTCOIND_PIDFILE=${MODESTCOIND_PIDFILE:-${MODESTCOIND_PIDDIR}/modestcoind.pid}
+MODESTCOIND_DATADIR=${MODESTCOIND_DATADIR:-${MODESTCOIND_DEFAULT_DATADIR}}
+MODESTCOIND_USER=${MODESTCOIND_USER:-${MODESTCOIN_USER:-modestcoin}}
+MODESTCOIND_GROUP=${MODESTCOIND_GROUP:-modestcoin}
+MODESTCOIND_BIN=${MODESTCOIND_BIN:-/usr/bin/modestcoind}
+MODESTCOIND_NICE=${MODESTCOIND_NICE:-${NICELEVEL:-0}}
+MODESTCOIND_OPTS="${MODESTCOIND_OPTS:-${MODESTCOIN_OPTS}}"
+
+name="Modestcoin Core Daemon"
+description="Modestcoin cryptocurrency P2P network daemon"
+
+command="/usr/bin/modestcoind"
+command_args="-pid=\"${MODESTCOIND_PIDFILE}\" \
+		-conf=\"${MODESTCOIND_CONFIGFILE}\" \
+		-datadir=\"${MODESTCOIND_DATADIR}\" \
+		-daemon \
+		${MODESTCOIND_OPTS}"
+
+required_files="${MODESTCOIND_CONFIGFILE}"
+start_stop_daemon_args="-u ${MODESTCOIND_USER} \
+			-N ${MODESTCOIND_NICE} -w 2000"
+pidfile="${MODESTCOIND_PIDFILE}"
+
+# The retry schedule to use when stopping the daemon. Could be either
+# a timeout in seconds or multiple signal/timeout pairs (like
+# "SIGKILL/180 SIGTERM/300")
+retry="${MODESTCOIND_SIGTERM_TIMEOUT}"
+
+depend() {
+	need localmount net
+}
+
+# verify
+# 1) that the datadir exists and is writable (or create it)
+# 2) that a directory for the pid exists and is writable
+# 3) ownership and permissions on the config file
+start_pre() {
+	checkpath \
+	-d \
+	--mode 0750 \
+	--owner "${MODESTCOIND_USER}:${MODESTCOIND_GROUP}" \
+	"${MODESTCOIND_DATADIR}"
+
+	checkpath \
+	-d \
+	--mode 0755 \
+	--owner "${MODESTCOIND_USER}:${MODESTCOIND_GROUP}" \
+	"${MODESTCOIND_PIDDIR}"
+
+	checkpath -f \
+	-o ${MODESTCOIND_USER}:${MODESTCOIND_GROUP} \
+	-m 0660 \
+	${MODESTCOIND_CONFIGFILE}
+
+	checkconfig || return 1
+}
+
+checkconfig()
+{
+	if ! grep -qs '^rpcpassword=' "${MODESTCOIND_CONFIGFILE}" ; then
+		eerror ""
+		eerror "ERROR: You must set a secure rpcpassword to run modestcoind."
+		eerror "The setting must appear in ${MODESTCOIND_CONFIGFILE}"
+		eerror ""
+		eerror "This password is security critical to securing wallets "
+		eerror "and must not be the same as the rpcuser setting."
+		eerror "You can generate a suitable random password using the following"
+		eerror "command from the shell:"
+		eerror ""
+		eerror "bash -c 'tr -dc a-zA-Z0-9 < /dev/urandom | head -c32 && echo'"
+		eerror ""
+		eerror "It is also recommended that you also set alertnotify so you are "
+		eerror "notified of problems:"
+		eerror ""
+		eerror "ie: alertnotify=echo %%s | mail -s \"Modestcoin Alert\"" \
+			"admin@foo.com"
+		eerror ""
+		return 1
+	fi
+}

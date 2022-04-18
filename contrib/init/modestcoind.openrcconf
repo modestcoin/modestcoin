@@ -1,0 +1,33 @@
+# /etc/conf.d/modestcoind: config file for /etc/init.d/modestcoind
+
+# Config file location
+#MODESTCOIND_CONFIGFILE="/etc/modestcoin/modestcoin.conf"
+
+# What directory to write pidfile to?  (created and owned by $MODESTCOIND_USER)
+#MODESTCOIND_PIDDIR="/var/run/modestcoind"
+
+# What filename to give the pidfile
+#MODESTCOIND_PIDFILE="${MODESTCOIND_PIDDIR}/modestcoind.pid"
+
+# Where to write modestcoind data (be mindful that the blockchain is large)
+#MODESTCOIND_DATADIR="/var/lib/modestcoind"
+
+# User and group to own modestcoind process
+#MODESTCOIND_USER="modestcoin"
+#MODESTCOIND_GROUP="modestcoin"
+
+# Path to modestcoind executable
+#MODESTCOIND_BIN="/usr/bin/modestcoind"
+
+# Nice value to run modestcoind under
+#MODESTCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+MODESTCOIND_OPTS="-disablewallet"
+
+# The timeout in seconds OpenRC will wait for modestcoind to terminate
+# after a SIGTERM has been raised.
+# Note that this will be mapped as argument to start-stop-daemon's
+# '--retry' option, which means you can specify a retry schedule
+# here. For more information see man 8 start-stop-daemon.
+MODESTCOIND_SIGTERM_TIMEOUT=60

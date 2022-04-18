@@ -1,9 +1,9 @@
-// Copyright (c) 2011-2016 The Bitcoin Core developers
+// Copyright (c) 2011-2016 The Modestcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_QT_COINCONTROLDIALOG_H
-#define BITCOIN_QT_COINCONTROLDIALOG_H
+#ifndef MODESTCOIN_QT_COINCONTROLDIALOG_H
+#define MODESTCOIN_QT_COINCONTROLDIALOG_H
 
 #include "amount.h"
 
@@ -110,4 +110,4 @@ private Q_SLOTS:
     void updateLabelLocked();
 };
 
-#endif // BITCOIN_QT_COINCONTROLDIALOG_H
+#endif // MODESTCOIN_QT_COINCONTROLDIALOG_H

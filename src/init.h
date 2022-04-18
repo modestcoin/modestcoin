@@ -1,10 +1,10 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2016 The Bitcoin Core developers
+// Copyright (c) 2009-2016 The Modestcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_INIT_H
-#define BITCOIN_INIT_H
+#ifndef MODESTCOIN_INIT_H
+#define MODESTCOIN_INIT_H
 
 #include <string>
 
@@ -26,7 +26,7 @@ void InitLogging();
 //!Parameter interaction: change current parameters depending on various rules
 void InitParameterInteraction();
 
-/** Initialize bitcoin core: Basic context setup.
+/** Initialize modestcoin core: Basic context setup.
  *  @note This can be done before daemonization.
  *  @pre Parameters should be parsed and config file should be read.
  */
@@ -44,7 +44,7 @@ bool AppInitParameterInteraction();
  */
 bool AppInitSanityChecks();
 /**
- * Bitcoin core main initialization.
+ * Modestcoin core main initialization.
  * @note This should only be done after daemonization.
  * @pre Parameters should be parsed and config file should be read, AppInitSanityChecks should have been called.
  */
@@ -52,8 +52,8 @@ bool AppInitMain(boost::thread_group& threadGroup, CScheduler& scheduler);
 
 /** The help message mode determines what help message to show */
 enum HelpMessageMode {
-    HMM_BITCOIND,
-    HMM_BITCOIN_QT
+    HMM_MODESTCOIND,
+    HMM_MODESTCOIN_QT
 };
 
 /** Help for options shared between UI and daemon (for -help) */
@@ -61,4 +61,4 @@ std::string HelpMessage(HelpMessageMode mode);
 /** Returns licensing information (for -version) */
 std::string LicenseInfo();
 
-#endif // BITCOIN_INIT_H
+#endif // MODESTCOIN_INIT_H

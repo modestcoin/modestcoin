@@ -1,10 +1,10 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2016 The Bitcoin Core developers
+// Copyright (c) 2009-2016 The Modestcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_WALLET_WALLETDB_H
-#define BITCOIN_WALLET_WALLETDB_H
+#ifndef MODESTCOIN_WALLET_WALLETDB_H
+#define MODESTCOIN_WALLET_WALLETDB_H
 
 #include "amount.h"
 #include "primitives/transaction.h"
@@ -185,4 +185,4 @@ private:
 
 void ThreadFlushWalletDB();
 
-#endif // BITCOIN_WALLET_WALLETDB_H
+#endif // MODESTCOIN_WALLET_WALLETDB_H

@@ -1,10 +1,10 @@
 // Copyright (c) 2009-2010 Satoshi Nakamoto
-// Copyright (c) 2009-2016 The Bitcoin Core developers
+// Copyright (c) 2009-2016 The Modestcoin Core developers
 // Distributed under the MIT software license, see the accompanying
 // file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
-#ifndef BITCOIN_RANDOM_H
-#define BITCOIN_RANDOM_H
+#ifndef MODESTCOIN_RANDOM_H
+#define MODESTCOIN_RANDOM_H
 
 #include "uint256.h"
 
@@ -46,4 +46,4 @@ public:
     uint32_t Rw;
 };
 
-#endif // BITCOIN_RANDOM_H
+#endif // MODESTCOIN_RANDOM_H
