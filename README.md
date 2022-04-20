@@ -40,7 +40,11 @@ on a patch set.
 
 Developer IRC can be found on Freenode at #modestcoin-dev.
 
-Testing
+Custom RPC Ports, New Genesis Block, New Total Supply, New Block Rewards, Rebranding/Renaming
 -------
-
-Testing and building is highly encouraged as it helps the development of Modestcoin. 
+Modestcoin uses custom RPC Ports (etc) to ensure its seperated from Bitcoin and other coins.
+The developers at modestcoin generated a new genesis block (1st block) to verify transactions off of.
+Our team also made it so all modestcoin addresses start with the letter M, 
+There is 10000000000 Total Supply, instead of 21 million like bitcoin.
+The new reward per block mined is 10000000 MTC,
+Testing and building modestcoin is highly encouraged as it helps the development of Modestcoin. 
