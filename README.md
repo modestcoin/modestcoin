@@ -10,7 +10,7 @@ http://modestchain.com:8080 (NOMP for mining pool, will be further updated and d
 What is Modestcoin?
 ----------------
 
-Modestcoin is an experimental digital currency forked from litecoin, that enables instant payments to
+Modestcoin is an experimental digital currency hard-forked from litecoin, that enables instant payments to
 anyone, anywhere in the world. Modestcoin uses peer-to-peer technology to operate
 with no central authority: managing transactions and issuing money are carried
 out collectively by the network. Modestcoin Core is the name of open source
@@ -22,7 +22,7 @@ the Modestcoin Core software, see [https://modestcoin.org](https://modestcoin.or
 License
 -------
 
-Modestcoin is released under the terms of the MIT license. See [COPYING](COPYING) for more
+Modestcoin Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
 information or see https://opensource.org/licenses/MIT.
 
 Development Process
