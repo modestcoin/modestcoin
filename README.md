@@ -1,7 +1,7 @@
 Modestcoin v0.2
 =====================================
 ![Modestcoin Green Logo](https://user-images.githubusercontent.com/99905005/164156633-21e78855-2e9c-4aa5-9d62-fa62c05a829f.png)
-https://modestcoin.org (Download latest Modestcoin Core ".EXE")                                                                                                   
+https://modestcoin.org (Download latest Modestcoin Core *".EXE"*)                                                                                                   
 http://modestchain.com:3001 (Blockchain explorer, *(Temporarly In manual mode) please manually search for your transactions*)                                                       
 http://modestchain.com:8080 (NOMP for mining pool, *Must use 3rd party miner*)                                                                             
 
