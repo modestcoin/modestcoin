@@ -43,8 +43,8 @@ Developer IRC can be found on Freenode at #modestcoin-dev.
 Custom RPC Ports, New Genesis Block, New Total Supply, New Block Rewards, Rebranding/Renaming
 -------
 Modestcoin uses custom RPC Ports (6333) to ensure its seperated from Bitcoin and other altcoins.
-The developers at modestcoin generated a new genesis block (1st block) to verify transactions off of.
-Our team also made it so all modestcoin addresses start with the letter M, 
+The developers at modestcoin generated a new genesis block to verify transactions off of.
+Our team also made it so all modestcoin addresses start with the letter M,(char,50) 
 There is 16 Million Total Supply, instead of 21 million like bitcoin or 84 million like litecoin.
-The new reward per block mined is 40 MTC,
+The reward per block mined is 40 MTC!
 Testing and building modestcoin is highly encouraged as it helps the development of Modestcoin. 
