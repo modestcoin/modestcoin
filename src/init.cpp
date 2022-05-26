@@ -506,23 +506,55 @@ std::string HelpMessage(HelpMessageMode mode)
 
 std::string LicenseInfo()
 {
-    const std::string URL_SOURCE_CODE = "<https://github.com/modestcoin-project/modestcoin>";
-    const std::string URL_WEBSITE = "<https://modestcoin.org>";
+    const std::string URL_SOURCE_CODE = "<https://github.com/modestcoin/modestcoin/>";
+    const std::string URL_WEBSITE = "<https://modestcoincore.org/>";
+    const std::string URL_EXPLORER = "<https://blocks.modestcoincore.org/>";
+    const std::string URL_OFFICIALPOOL = "<https://mining.modestcoincore.org/>";
+    const std::string URL_WALLETS = "<https://github.com/modestcoin/modestcoin/latest>";
+    const std::string URL_WEBWALLET = "<https://wallet.modestcoincore.org/>";
+    const std::string URL_DISCORD = "<https://discord.gg/QRmU883bEs>";
+    const std::string URL_TWITTER = "<https://twitter.com/modestcoin/>";
+    const std::string URL_REDDIT = "<https://www.reddit.com/r/modestcoin/>";
 
-    return CopyrightHolders(strprintf(_("Copyright (C) %i-%i"), 2011, COPYRIGHT_YEAR) + " ") + "\n" +
+//    return CopyrightHolders(strprintf(_("Copyright (C) %i-%i"), 2022, COPYRIGHT_YEAR) + " ") + "\n" +
+    return
            "\n" +
-           strprintf(_("Please contribute if you find %s useful. "
-                       "Visit %s for further information about the software."),
-               PACKAGE_NAME, URL_WEBSITE) +
+           strprintf(_("Website: %s"), + "\n" +
+               URL_WEBSITE) +
            "\n" +
-           strprintf(_("The source code is available from %s."),
-               URL_SOURCE_CODE) +
+           _("--------------------------------------------") + "\n" +
+           strprintf(_("Web Wallet: %s"), + "\n" +
+               URL_WEBWALLET) +
+           "\n" +
+           _("--------------------------------------------") + "\n" +
+           strprintf(_("Wallets: %s"), + "\n" +
+               URL_WALLETS) +
+           "\n" +
+           _("--------------------------------------------") + "\n" +
+           strprintf(_("Explorer %s"), + "\n" +
+               URL_EXPLORER) +
+           "\n" +
+           _("--------------------------------------------") + "\n" +
+           strprintf(_("Official Pool: %s"), + "\n" +
+               URL_OFFICIALPOOL) +
+           "\n" +
+           _("--------------------------------------------") + "\n" +
+           strprintf(_("Discord: %s"), + "\n" +
+               URL_DISCORD) +
+           "\n" +
+           _("--------------------------------------------") + "\n" +
+           strprintf(_("TWITTER: %s"), + "\n" +
+               URL_TWITTER) +
+           "\n" +
+           _("--------------------------------------------") + "\n" +
+           strprintf(_("REDDIT: %s"), + "\n" +
+               URL_REDDIT) +
+           "\n" +
+           _("----------------------------------------------------------------------------------------") + "\n" +
            "\n" +
            "\n" +
-           _("This is experimental software.") + "\n" +
-           strprintf(_("Distributed under the MIT software license, see the accompanying file %s or %s"), "COPYING", "<https://opensource.org/licenses/MIT>") + "\n" +
            "\n" +
-           strprintf(_("This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit %s and cryptographic software written by Eric Young and UPnP software written by Thomas Bernard."), "<https://www.openssl.org>") +
+           strprintf(_("This is a software distributed under the MIT software license, see the accompanying file %s or %s"), "COPYING", "<https://opensource.org/licenses/MIT>") + "\n" +
            "\n";
 }
 
