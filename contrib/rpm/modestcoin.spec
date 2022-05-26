@@ -334,9 +334,9 @@ if [ `%{_sbindir}/sestatus |grep -c "disabled"` -eq 0 ]; then
 for selinuxvariant in %{selinux_variants}; do
 	%{_sbindir}/semodule -s ${selinuxvariant} -i %{_datadir}/selinux/${selinuxvariant}/modestcoin.pp &> /dev/null || :
 done
-%{_sbindir}/semanage port -a -t modestcoin_port_t -p tcp 9332
-%{_sbindir}/semanage port -a -t modestcoin_port_t -p tcp 9333
-%{_sbindir}/semanage port -a -t modestcoin_port_t -p tcp 19332
+%{_sbindir}/semanage port -a -t modestcoin_port_t -p tcp 6332
+%{_sbindir}/semanage port -a -t modestcoin_port_t -p tcp 6333
+%{_sbindir}/semanage port -a -t modestcoin_port_t -p tcp 16332
 %{_sbindir}/semanage port -a -t modestcoin_port_t -p tcp 19333
 %{_sbindir}/fixfiles -R modestcoin-server restore &> /dev/null || :
 %{_sbindir}/restorecon -R %{_localstatedir}/lib/modestcoin || :
@@ -353,9 +353,9 @@ fi
 # SELinux
 if [ $1 -eq 0 ]; then
 	if [ `%{_sbindir}/sestatus |grep -c "disabled"` -eq 0 ]; then
-	%{_sbindir}/semanage port -d -p tcp 9332
-	%{_sbindir}/semanage port -d -p tcp 9333
-	%{_sbindir}/semanage port -d -p tcp 19332
+	%{_sbindir}/semanage port -d -p tcp 6332
+	%{_sbindir}/semanage port -d -p tcp 6333
+	%{_sbindir}/semanage port -d -p tcp 16332
 	%{_sbindir}/semanage port -d -p tcp 19333
 	for selinuxvariant in %{selinux_variants}; do
 		%{_sbindir}/semodule -s ${selinuxvariant} -r modestcoin &> /dev/null || :
