@@ -560,8 +560,23 @@ boost::filesystem::path GetConfigFile(const std::string& confPath)
 void ReadConfigFile(const std::string& confPath)
 {
     boost::filesystem::ifstream streamConfig(GetConfigFile(confPath));
-    if (!streamConfig.good())
-        return; // No modestcoin.conf file is OK
+    if (!streamConfig.good()){
+        FILE* configFile = fopen(GetConfigFile(confPath).string().c_str(), "a");
+
+        if (configFile != NULL) {
+            std::string strHeader = "# Modestcoin config file\n"
+                          "\n"
+                          "# ADDNODES:\n"
+                          "addnode=node01.modestcoincore.org\n"
+                          "addnode=node02.modestcoincore.org\n"
+                          "addnode=155.138.132.112\n"
+                          "addnode=149.248.59.139\n"
+                          "\n";
+            fwrite(strHeader.c_str(), std::strlen(strHeader.c_str()), 1, configFile);
+            fclose(configFile);
+        }
+        return; // Nothing to read, so just return
+    }
 
     {
         LOCK(cs_args);
