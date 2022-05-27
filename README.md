@@ -1,4 +1,4 @@
-Modestcoin v1.0
+Modestcoin v1.0.1
 =====================================
 ![Modestcoin Green Logo](https://user-images.githubusercontent.com/99905005/164156633-21e78855-2e9c-4aa5-9d62-fa62c05a829f.png)
 ## https://modestcoincore.org (Official Website)
