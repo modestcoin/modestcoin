@@ -1,13 +1,13 @@
 Modestcoin v1.0
 =====================================
 ![Modestcoin Green Logo](https://user-images.githubusercontent.com/99905005/164156633-21e78855-2e9c-4aa5-9d62-fa62c05a829f.png)
-https://modestcoincore.org (Official Website)                                                                                                   
-https://blocks.modestcoincore.org/ (Blockchain explorer)                                                       
+## https://modestcoincore.org (Official Website)
+## https://blocks.modestcoincore.org/ (Blockchain explorer)                                                       
                                                                              
 
 (Visit the "Modest-Documentation.md" repository for detailed linux building instructions)
 
-What is Modestcoin?
+# What is Modestcoin? ![Modestcoin3D](https://user-images.githubusercontent.com/99905005/170621321-df3be5ed-81f4-42fd-ab6f-04f31376b46b.png)
 ----------------
 
 Modestcoin is an experimental digital currency hard-forked from litecoin, that enables instant payments to
@@ -17,15 +17,15 @@ out collectively by the network. Modestcoin Core is the name of open source
 software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the Modestcoin Core software, see [https://modestcoin.org](https://modestcoin.org).
+the Modestcoin Core software, see [https://modestcoincore.org](https://modestcoincore.org).
 
-License
+### License
 -------
 
 Modestcoin Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
 information or see https://opensource.org/licenses/MIT.
 
-Development Process
+### Development Process
 -------------------
 
 The `master` branch is regularly built and tested, but is not guaranteed to be
@@ -40,11 +40,24 @@ on a patch set.
 
 Developer IRC can be found on Freenode at #modestcoin-dev.
 
-Custom RPC Ports, New Genesis Block, New Total Supply, New Block Rewards, Rebranding/Renaming
+## Other Information:
 -------
-Modestcoin uses custom RPC Ports (6333) to ensure its seperated from Bitcoin and other altcoins.
-The developers at modestcoin generated a new genesis block to verify transactions off of.
-Our team also made it so all modestcoin addresses start with the letter M,(char,51) 
-There is 16 Million Total Supply, instead of 21 million like bitcoin or 84 million like litecoin.
-The reward per block mined is 40 MTC!
-Testing and building modestcoin is highly encouraged as it helps the development of Modestcoin. 
+#### RPC Ports:
+Mainnet: 6333 
+Testnet: 16333
+Regnet:
+
+#### Total Supply:
+16,000,000 MTC total supply.
+
+#### Reward per block mined:
+40 MTC (as of 5/25/2022)
+
+#### Reward halfing interval:
+the reward of 40 MTC per block mined cuts in half every 160000 blocks.
+
+#### Join the community:
+Reddit: https://www.reddit.com/r/modestcoin/                                                                                                                           
+Discord: https://discord.gg/s9gZEGygsE                                                                                                                                 
+Twitter: https://twitter.com/modestcoin                                                                                                                               
+
