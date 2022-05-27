@@ -84,7 +84,7 @@ public:
             foreground = option.palette.color(QPalette::Text);
         }
         painter->setPen(foreground);
-        QString amountText = ModestcoinUnits::formatWithUnit(unit, amount, true, ModestcoinUnits::separatorAlways);
+        QString amountText = ModestcoinUnits::roundWithUnit(unit, amount, true, ModestcoinUnits::separatorAlways);
         if(!confirmed)
         {
             amountText = QString("[") + amountText + QString("]");
@@ -168,14 +168,14 @@ void OverviewPage::setBalance(const CAmount& balance, const CAmount& unconfirmed
     currentWatchOnlyBalance = watchOnlyBalance;
     currentWatchUnconfBalance = watchUnconfBalance;
     currentWatchImmatureBalance = watchImmatureBalance;
-    ui->labelBalance->setText(ModestcoinUnits::formatWithUnit(unit, balance, false, ModestcoinUnits::separatorAlways));
-    ui->labelUnconfirmed->setText(ModestcoinUnits::formatWithUnit(unit, unconfirmedBalance, false, ModestcoinUnits::separatorAlways));
-    ui->labelImmature->setText(ModestcoinUnits::formatWithUnit(unit, immatureBalance, false, ModestcoinUnits::separatorAlways));
-    ui->labelTotal->setText(ModestcoinUnits::formatWithUnit(unit, balance + unconfirmedBalance + immatureBalance, false, ModestcoinUnits::separatorAlways));
-    ui->labelWatchAvailable->setText(ModestcoinUnits::formatWithUnit(unit, watchOnlyBalance, false, ModestcoinUnits::separatorAlways));
-    ui->labelWatchPending->setText(ModestcoinUnits::formatWithUnit(unit, watchUnconfBalance, false, ModestcoinUnits::separatorAlways));
-    ui->labelWatchImmature->setText(ModestcoinUnits::formatWithUnit(unit, watchImmatureBalance, false, ModestcoinUnits::separatorAlways));
-    ui->labelWatchTotal->setText(ModestcoinUnits::formatWithUnit(unit, watchOnlyBalance + watchUnconfBalance + watchImmatureBalance, false, ModestcoinUnits::separatorAlways));
+    ui->labelBalance->setText(ModestcoinUnits::roundWithUnit(unit, balance, false, ModestcoinUnits::separatorAlways));
+    ui->labelUnconfirmed->setText(ModestcoinUnits::roundWithUnit(unit, unconfirmedBalance, false, ModestcoinUnits::separatorAlways));
+    ui->labelImmature->setText(ModestcoinUnits::roundWithUnit(unit, immatureBalance, false, ModestcoinUnits::separatorAlways));
+    ui->labelTotal->setText(ModestcoinUnits::roundWithUnit(unit, balance + unconfirmedBalance + immatureBalance, false, ModestcoinUnits::separatorAlways));
+    ui->labelWatchAvailable->setText(ModestcoinUnits::roundWithUnit(unit, watchOnlyBalance, false, ModestcoinUnits::separatorAlways));
+    ui->labelWatchPending->setText(ModestcoinUnits::roundWithUnit(unit, watchUnconfBalance, false, ModestcoinUnits::separatorAlways));
+    ui->labelWatchImmature->setText(ModestcoinUnits::roundWithUnit(unit, watchImmatureBalance, false, ModestcoinUnits::separatorAlways));
+    ui->labelWatchTotal->setText(ModestcoinUnits::roundWithUnit(unit, watchOnlyBalance + watchUnconfBalance + watchImmatureBalance, false, ModestcoinUnits::separatorAlways));
 
     // only show immature (newly mined) balance if it's non-zero, so as not to complicate things
     // for the non-mining users

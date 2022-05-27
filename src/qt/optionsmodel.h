@@ -40,6 +40,7 @@ public:
         ProxyPortTor,           // int
         DisplayUnit,            // ModestcoinUnits::Unit
         ThirdPartyTxUrls,       // QString
+        Digits,                 // QString
         Language,               // QString
         CoinControlFeatures,    // bool
         ThreadsScriptVerif,     // int
