@@ -1,6 +1,6 @@
 Modestcoin v1.0.1
 =====================================
-![Modestcoin Green Logo](https://user-images.githubusercontent.com/99905005/164156633-21e78855-2e9c-4aa5-9d62-fa62c05a829f.png)
+![headerlogo6](https://user-images.githubusercontent.com/99905005/170703840-e75ace8d-13f8-474c-bc5d-3ff17ec823a6.png)
 ## https://modestcoincore.org (Official Website)
 ## https://blocks.modestcoincore.org/ (Blockchain explorer)                                                       
                                                                              
