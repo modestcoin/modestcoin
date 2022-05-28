@@ -43,18 +43,31 @@ Developer IRC can be found on Freenode at #modestcoin-dev.
 ## Other Information:
 -------
 #### RPC Ports:
-Mainnet: 6333 
-Testnet: 16333
+Mainnet: 6332                                                    
+p2p port: 6333
+
+Testnet:
+
 Regnet:
 
+
 #### Total Supply:
-16,000,000 MTC total supply.
+14,400,000 (MTC)
 
 #### Reward per block mined:
 40 MTC (as of 5/25/2022)
 
 #### Reward halfing interval:
-the reward of 40 MTC per block mined cuts in half every 160000 blocks.
+160,000 blocks
+
+### Block time:
+4 Minutes
+
+### Diff time:
+1,260 blocks (as of 5/28/2022)
+
+### Ticker:
+MTC
 
 #### Join the community:
 Reddit: https://www.reddit.com/r/modestcoin/                                                                                                                           
