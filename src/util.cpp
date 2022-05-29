@@ -570,7 +570,7 @@ void ReadConfigFile(const std::string& confPath)
                           "addnode=node01.modestcoincore.org\n"
                           "addnode=node02.modestcoincore.org\n"
                           "addnode=155.138.132.112\n"
-                          "addnode=149.248.59.139\n"
+                          "addnode=107.191.39.189\n"
                           "\n";
             fwrite(strHeader.c_str(), std::strlen(strHeader.c_str()), 1, configFile);
             fclose(configFile);
