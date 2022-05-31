@@ -2,7 +2,8 @@ Modestcoin v1.0.1
 =====================================
 ![headerlogo6](https://user-images.githubusercontent.com/99905005/170703840-e75ace8d-13f8-474c-bc5d-3ff17ec823a6.png)
 ## https://modestcoincore.org (Official Website)
-## https://blocks.modestcoincore.org/ (Blockchain explorer)                                                       
+## https://blocks.modestcoincore.org/ (Blockchain explorer)   
+## https://wallet.modestcoincore.org  (Web Wallet)
                                                                              
 
 (Visit the "Modest-Documentation.md" repository for detailed linux building instructions)
