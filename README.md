@@ -6,7 +6,7 @@ Modestcoin v1.0.1
                                                                              
 
 (Visit the "Modest-Documentation.md" repository for detailed linux building instructions)
-
+![1](https://user-images.githubusercontent.com/99905005/171275581-10c5f866-de19-4553-a075-20ca343f5b16.png)
 # What is Modestcoin? ![Modestcoin3D](https://user-images.githubusercontent.com/99905005/170621321-df3be5ed-81f4-42fd-ab6f-04f31376b46b.png)
 ----------------
 
@@ -19,58 +19,16 @@ software which enables the use of this currency.
 For more information, as well as an immediately useable, binary version of
 the Modestcoin Core software, see [https://modestcoincore.org](https://modestcoincore.org).
 
+![2](https://user-images.githubusercontent.com/99905005/171275668-f9d8393c-a9bb-4d61-8d79-c6b455bab113.png)
+
 ### License
 -------
 
 Modestcoin Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
 information or see https://opensource.org/licenses/MIT.
 
-### Development Process
--------------------
+![3](https://user-images.githubusercontent.com/99905005/171275681-32f3277c-d153-40a5-b8a1-e35b62ed107d.png)
 
-The `master` branch is regularly built and tested, but is not guaranteed to be
-completely stable. [Tags](https://github.com/modestcoin-project/modestcoin/tags) are created
-regularly to indicate new official, stable release versions of Modestcoin Core.
-
-The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md).
-
-The developer [mailing list](https://groups.google.com/forum/#!forum/modestcoin-dev)
-should be used to discuss complicated or controversial changes before working
-on a patch set.
-
-Developer IRC can be found on Freenode at #modestcoin-dev.
-
-## Other Information:
--------
-#### RPC Ports:
-Mainnet: 6332                                                    
-p2p port: 6333
-
-Testnet:
-
-Regnet:
-
-
-#### Total Supply:
-14,400,000 (MTC)
-
-#### Reward per block mined:
-40 MTC (as of 5/25/2022)
-
-#### Reward halfing interval:
-160,000 blocks
-
-### Block time:
-4 Minutes
-
-### Diff time:
-1,260 blocks (as of 5/28/2022)
-
-### Ticker:
-MTC
-
-#### Join the community:
-Reddit: https://www.reddit.com/r/modestcoin/                                                                                                                           
-Discord: https://discord.gg/s9gZEGygsE                                                                                                                                 
-Twitter: https://twitter.com/modestcoin                                                                                                                               
+## Join the community:
+## Reddit: https://www.reddit.com/r/modestcoin/                                                                                                                        Discord: https://discord.gg/s9gZEGygsE                                                                                                                             ## Twitter: https://twitter.com/modestcoin                                                                                                                               
 
