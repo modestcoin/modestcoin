@@ -31,5 +31,5 @@ information or see https://opensource.org/licenses/MIT.
 ![3](https://user-images.githubusercontent.com/99905005/171275681-32f3277c-d153-40a5-b8a1-e35b62ed107d.png)
 
 ## Join the community:
-## Reddit: https://www.reddit.com/r/modestcoin/                                                                                                                        Discord: https://discord.gg/s9gZEGygsE                                                                                                                             ## Twitter: https://twitter.com/modestcoin                                                                                                                               
+## Reddit: https://www.reddit.com/r/modestcoin/                                                                                                                        Discord: https://discord.gg/s9gZEGygsE                                                                                                                             Twitter: https://twitter.com/modestcoin                                                                                                                               
 
