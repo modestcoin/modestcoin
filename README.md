@@ -4,6 +4,7 @@ Modestcoin Core
 ## Official Website: https://modestcoincore.org
 ## Blockchain Explorer: https://blocks.modestcoincore.org/ 
 ## Web Wallet: https://wallet.modestcoincore.org
+## Mining Pool: https://mining.modestcoincore.org
                                                                              
 
 (Visit the "Modest-Documentation.md" repository for detailed linux building instructions)
