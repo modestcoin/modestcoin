@@ -12,7 +12,7 @@ static const int MODEL_UPDATE_DELAY = 250;
 static const int MAX_PASSPHRASE_SIZE = 1024;
 
 /* ModestcoinGUI -- Size of icons in status bar */
-static const int STATUSBAR_ICONSIZE = 16;
+static const int STATUSBAR_ICONSIZE = 24;
 
 static const bool DEFAULT_SPLASHSCREEN = true;
 
@@ -22,15 +22,15 @@ static const bool DEFAULT_SPLASHSCREEN = true;
 /* Transaction list -- unconfirmed transaction */
 #define COLOR_UNCONFIRMED QColor(128, 128, 128)
 /* Transaction list -- negative amount */
-#define COLOR_NEGATIVE QColor(255, 0, 0)
+#define COLOR_NEGATIVE QColor(64, 0, 255)
 /* Transaction list -- bare address (without label) */
-#define COLOR_BAREADDRESS QColor(140, 140, 140)
+#define COLOR_BAREADDRESS QColor(61, 163, 234)
 /* Transaction list -- TX status decoration - open until date */
 #define COLOR_TX_STATUS_OPENUNTILDATE QColor(64, 64, 255)
 /* Transaction list -- TX status decoration - offline */
 #define COLOR_TX_STATUS_OFFLINE QColor(192, 192, 192)
 /* Transaction list -- TX status decoration - danger, tx needs attention */
-#define COLOR_TX_STATUS_DANGER QColor(200, 100, 100)
+#define COLOR_TX_STATUS_DANGER QColor(68, 0, 255)
 /* Transaction list -- TX status decoration - default color */
 #define COLOR_BLACK QColor(0, 0, 0)
 

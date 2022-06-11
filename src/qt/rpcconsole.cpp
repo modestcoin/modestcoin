@@ -719,20 +719,17 @@ void RPCConsole::clear(bool clearHistory)
         QString(
                 "table { }"
                 "td.time { color: #808080; font-size: %2; padding-top: 3px; } "
-                "td.message { font-family: %1; font-size: %2; white-space:pre-wrap; } "
-                "td.cmd-request { color: #006060; } "
-                "td.cmd-error { color: red; } "
-                ".secwarning { color: red; }"
-                "b { color: #006060; } "
+                "td.message { font-family: %1; color: #3DA3EA; font-size: %2; white-space:pre-wrap; } "
+                "td.cmd-request { color: #2B3C48; } "
+                "td.cmd-error { color: #4E3DEA; } "
+                ".secwarning { color: #4E3DEA; }"
+                "b { color: #3DA3EA; } "
             ).arg(fixedFontInfo.family(), QString("%1pt").arg(consoleFontSize))
         );
 
     message(CMD_REPLY, (tr("Welcome to the %1 RPC console.").arg(tr(PACKAGE_NAME)) + "<br>" +
                         tr("Use up and down arrows to navigate history, and <b>Ctrl-L</b> to clear screen.") + "<br>" +
-                        tr("Type <b>help</b> for an overview of available commands.")) +
-                        "<br><span class=\"secwarning\">" +
-                        tr("WARNING: Scammers have been active, telling users to type commands here, stealing their wallet contents. Do not use this console without fully understanding the ramification of a command.") +
-                        "</span>",
+                        tr("Type <b>help</b> for an overview of available commands.")),
                         true);
 }
 
