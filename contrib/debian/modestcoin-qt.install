@@ -1,6 +1,0 @@
-usr/local/bin/modestcoin-qt usr/bin
-share/pixmaps/modestcoin32.xpm usr/share/pixmaps
-share/pixmaps/modestcoin16.xpm usr/share/pixmaps
-share/pixmaps/modestcoin128.png usr/share/pixmaps
-debian/modestcoin-qt.desktop usr/share/applications
-debian/modestcoin-qt.protocol usr/share/kde4/services/
