@@ -35,3 +35,4 @@ information or see https://opensource.org/licenses/MIT.
 #### Reddit: https://www.reddit.com/r/modestcoin/                                                                                
 #### Twitter: https://www.twitter.com/modestcoin/
 #### Discord: https://discord.gg/Hawhc2DmSp
+![Modestcoin3D](https://user-images.githubusercontent.com/99905005/170621321-df3be5ed-81f4-42fd-ab6f-04f31376b46b.png)
