@@ -33,6 +33,7 @@ information or see https://opensource.org/licenses/MIT.
 #### Mining Pool: [http://modestpool.xyz](http://modestpool.xyz)
 #### Web Wallet: COMING SOON!
 #### Reddit: https://www.reddit.com/r/modestcoin/                                                                                
-#### Twitter: https://www.twitter.com/modestcoin/
+#### Twitter: https://www.twitter.com/modestcoin_/
 #### Discord: https://discord.gg/Hawhc2DmSp
+#### Sign up for our community airdrop: [https://forms.gle/QqycTsAkRmU3gjQW8](https://forms.gle/QqycTsAkRmU3gjQW8)
 ![Modestcoin3D](https://user-images.githubusercontent.com/99905005/170621321-df3be5ed-81f4-42fd-ab6f-04f31376b46b.png)
