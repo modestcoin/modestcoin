@@ -1,15 +1,10 @@
 Modestcoin Core
 =====================================
 ![headerlogo6](https://user-images.githubusercontent.com/99905005/170703840-e75ace8d-13f8-474c-bc5d-3ff17ec823a6.png)
-## Official Website: COMING SOON!
-## Blockchain Explorer: COMING SOON!
-## Web Wallet: COMING SOON!
-## Mining Pool: COMING SOON!
+
                                                                              
 
-(Visit the "Modest-Documentation.md" repository for detailed linux building instructions)
-
-# What is Modestcoin?![Modestcoin3D](https://user-images.githubusercontent.com/99905005/170621321-df3be5ed-81f4-42fd-ab6f-04f31376b46b.png)
+### What is Modestcoin?![Modestcoin3D](https://user-images.githubusercontent.com/99905005/170621321-df3be5ed-81f4-42fd-ab6f-04f31376b46b.png)
 ----------------
 
 Modestcoin is an experimental digital currency that enables instant payments to
@@ -23,7 +18,7 @@ the Modestcoin Core software, see [https://modestcoincore.org](https://modestcoi
 
 
 
-## License
+### License
 -------
 
 Modestcoin Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
@@ -31,7 +26,12 @@ information or see https://opensource.org/licenses/MIT.
 
 
 
-## Join the community:
-## Reddit: https://www.reddit.com/r/modestcoin/                                                                                
-## Twitter: https://www.twitter.com/modestcoin/
-## Discord: https://discord.gg/Hawhc2DmSp
+### Join the community:
+----------------
+#### Official Website: [https://modestcoin.xyz](https://modestcoin.xyz)
+#### Blockchain Explorer: [http://modestchain.xyz](http://modestchain.xyz)
+#### Mining Pool: [http://modestpool.xyz](http://modestpool.xyz)
+#### Web Wallet: COMING SOON!
+#### Reddit: https://www.reddit.com/r/modestcoin/                                                                                
+#### Twitter: https://www.twitter.com/modestcoin/
+#### Discord: https://discord.gg/Hawhc2DmSp
