@@ -4,7 +4,7 @@ Modestcoin Core
 
                                                                              
 
-### What is Modestcoin?![Modestcoin3D](https://user-images.githubusercontent.com/99905005/170621321-df3be5ed-81f4-42fd-ab6f-04f31376b46b.png)
+### What is Modestcoin?
 ----------------
 
 Modestcoin is an experimental digital currency that enables instant payments to
