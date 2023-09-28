@@ -1,11 +1,15 @@
-Modestcoin Core integration/staging tree
+Modestcoin Core
 =====================================
+![headerlogo6](https://user-images.githubusercontent.com/99905005/170703840-e75ace8d-13f8-474c-bc5d-3ff17ec823a6.png)
+## Official Website: COMING SOON!
+## Blockchain Explorer: COMING SOON!
+## Web Wallet: COMING SOON!
+## Mining Pool: COMING SOON!
+                                                                             
 
-[![Build Status](https://travis-ci.org/modestcoin-project/modestcoin.svg?branch=master)](https://travis-ci.org/modestcoin-project/modestcoin)
+(Visit the "Modest-Documentation.md" repository for detailed linux building instructions)
 
-https://modestcoin.org
-
-What is Modestcoin?
+# What is Modestcoin?![Modestcoin3D](https://user-images.githubusercontent.com/99905005/170621321-df3be5ed-81f4-42fd-ab6f-04f31376b46b.png)
 ----------------
 
 Modestcoin is an experimental digital currency that enables instant payments to
@@ -15,65 +19,19 @@ out collectively by the network. Modestcoin Core is the name of open source
 software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the Modestcoin Core software, see [https://modestcoin.org](https://modestcoin.org).
+the Modestcoin Core software, see [https://modestcoincore.org](https://modestcoincore.org).
 
-License
+
+
+## License
 -------
 
 Modestcoin Core is released under the terms of the MIT license. See [COPYING](COPYING) for more
 information or see https://opensource.org/licenses/MIT.
 
-Development Process
--------------------
 
-The `master` branch is regularly built and tested, but is not guaranteed to be
-completely stable. [Tags](https://github.com/modestcoin-project/modestcoin/tags) are created
-regularly to indicate new official, stable release versions of Modestcoin Core.
 
-The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md).
-
-The developer [mailing list](https://groups.google.com/forum/#!forum/modestcoin-dev)
-should be used to discuss complicated or controversial changes before working
-on a patch set.
-
-Developer IRC can be found on Freenode at #modestcoin-dev.
-
-Testing
--------
-
-Testing and code review is the bottleneck for development; we get more pull
-requests than we can review and test on short notice. Please be patient and help out by testing
-other people's pull requests, and remember this is a security-critical project where any mistake might cost people
-lots of money.
-
-### Automated Testing
-
-Developers are strongly encouraged to write [unit tests](src/test/README.md) for new code, and to
-submit new unit tests for old code. Unit tests can be compiled and run
-(assuming they weren't disabled in configure) with: `make check`. Further details on running
-and extending unit tests can be found in [/src/test/README.md](/src/test/README.md).
-
-There are also [regression and integration tests](/test), written
-in Python, that are run automatically on the build server.
-These tests can be run (if the [test dependencies](/test) are installed) with: `test/functional/test_runner.py`
-
-The Travis CI system makes sure that every pull request is built for Windows, Linux, and OS X, and that unit/sanity tests are run automatically.
-
-### Manual Quality Assurance (QA) Testing
-
-Changes should be tested by somebody other than the developer who wrote the
-code. This is especially important for large or high-risk changes. It is useful
-to add a test plan to the pull request description if testing the changes is
-not straightforward.
-
-Translations
-------------
-
-We only accept translation fixes that are submitted through [Bitcoin Core's Transifex page](https://www.transifex.com/projects/p/bitcoin/).
-Translations are converted to Modestcoin periodically.
-
-Translations are periodically pulled from Transifex and merged into the git repository. See the
-[translation process](doc/translation_process.md) for details on how this works.
-
-**Important**: We do not accept translation changes as GitHub pull requests because the next
-pull from Transifex would automatically overwrite them again.
+## Join the community:
+## Reddit: https://www.reddit.com/r/modestcoin/                                                                                
+## Twitter: https://www.twitter.com/modestcoin/
+## Discord: https://discord.gg/Hawhc2DmSp
