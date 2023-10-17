@@ -28,7 +28,7 @@ information or see https://opensource.org/licenses/MIT.
 
 ### Join the community:
 ----------------
-#### Official Website: [https://modestcoin.xyz](https://modestcoin.xyz)
+#### Official Website: [http://modestcoin.xyz](http://modestcoin.xyz)
 #### Blockchain Explorer: [http://modestchain.xyz](http://modestchain.xyz)
 #### Mining Pool: [http://modestpool.xyz](http://modestpool.xyz)
 #### Web Wallet: COMING SOON!
