@@ -14,7 +14,7 @@ out collectively by the network. Modestcoin Core is the name of open source
 software which enables the use of this currency.
 
 For more information, as well as an immediately useable, binary version of
-the Modestcoin Core software, see [https://modestcoin.xyz](https://modestcoin.xyz).
+the Modestcoin Core software, see [http://modestcoin.xyz](http://modestcoin.xyz).
 
 
 
